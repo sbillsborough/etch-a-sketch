@@ -1,4 +1,7 @@
 const containerDiv = document.querySelector(".container");
 
-const squareDiv = document.createElement("div");
-containerDiv.appendChild(squareDiv);
+for (let i = 0; i < 16; i++) {
+  const squareDiv = document.createElement("div");
+  squareDiv.setAttribute("class", "square");
+  containerDiv.appendChild(squareDiv);
+}
