@@ -9,7 +9,7 @@ for (let i = 0; i < 256; i++) {
 const square = document.querySelectorAll(".square");
 
 for (let i = 0; i < square.length; i++) {
-  square[i].addEventListener("click", (e) => {
+  square[i].addEventListener("mouseover", (e) => {
     // e.target.style.background = "blue";
     e.target.setAttribute("style", "background: blue;");
   });
