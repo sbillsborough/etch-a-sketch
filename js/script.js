@@ -5,3 +5,12 @@ for (let i = 0; i < 256; i++) {
   squareDiv.setAttribute("class", "square");
   containerDiv.appendChild(squareDiv);
 }
+
+const square = document.querySelectorAll(".square");
+
+for (let i = 0; i < square.length; i++) {
+  square[i].addEventListener("click", (e) => {
+    // e.target.style.background = "blue";
+    e.target.setAttribute("style", "background: blue;");
+  });
+}
