@@ -2,6 +2,7 @@ const containerDiv = document.querySelector(".container");
 
 function createSquares(amount) {
   containerDiv.innerHTML = "";
+
   for (let i = 0; i < amount; i++) {
     const squareDiv = document.createElement("div");
     squareDiv.setAttribute("class", "square");

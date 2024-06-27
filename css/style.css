@@ -9,13 +9,12 @@
   flex-wrap: wrap;
   align-items: stretch;
   width: 540px;
+  height: 540px;
 }
 
 .square {
   border: 1px solid black;
-  width: calc(100% / 10); /* This sets the width of each square dynamically */
-  padding-top: calc(
-    100% / 10
-  ); /* This sets the height to match the width, maintaining a square aspect ratio */
+  width: 50%;
+  height: 50%;
   box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
 }
