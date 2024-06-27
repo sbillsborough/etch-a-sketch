@@ -14,3 +14,9 @@ for (let i = 0; i < square.length; i++) {
     e.target.setAttribute("style", "background: blue;");
   });
 }
+
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", function () {
+  let squaresAmount = prompt("How many squares?");
+  console.log(squaresAmount);
+});
