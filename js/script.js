@@ -1,6 +1,6 @@
 const containerDiv = document.querySelector(".container");
 
-for (let i = 0; i < 256; i++) {
+for (let i = 0; i < 100; i++) {
   const squareDiv = document.createElement("div");
   squareDiv.setAttribute("class", "square");
   containerDiv.appendChild(squareDiv);
@@ -18,5 +18,4 @@ for (let i = 0; i < square.length; i++) {
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", function () {
   let squaresAmount = prompt("How many squares?");
-  console.log(squaresAmount);
 });

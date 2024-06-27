@@ -7,11 +7,15 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 540px;
+  align-items: stretch;
+  width: 540px;
 }
 
 .square {
   border: 1px solid black;
-  width: 30px;
-  height: 30px;
+  width: calc(100% / 10); /* This sets the width of each square dynamically */
+  padding-top: calc(
+    100% / 10
+  ); /* This sets the height to match the width, maintaining a square aspect ratio */
+  box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
 }
