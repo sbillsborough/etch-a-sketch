@@ -3,6 +3,10 @@ const containerDiv = document.querySelector(".container");
 function createSquares(amount) {
   containerDiv.innerHTML = "";
 
+  // Calculate the number of squares per side
+  const squaresPerSide = Math.ceil(Math.sqrt(amount));
+  containerDiv.style.setProperty("--squares-per-side", squaresPerSide);
+
   for (let i = 0; i < amount; i++) {
     const squareDiv = document.createElement("div");
     squareDiv.setAttribute("class", "square");

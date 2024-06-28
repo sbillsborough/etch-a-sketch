@@ -2,19 +2,19 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
   width: 540px;
   height: 540px;
+  --squares-per-side: 10; /* Default value for initial squares creation */
 }
 
 .square {
   border: 1px solid black;
-  width: 50%;
-  height: 50%;
-  box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
+  flex: 0 0 calc(100% / var(--squares-per-side));
+  height: calc(100% / var(--squares-per-side));
 }
